@@ -61,7 +61,7 @@ $("#foo").submit(function(event){
 });
 
 //  1. Enter sheet name where data is to be written below
-        var SHEET_NAME = "Sheet1";
+        var SHEET_NAME = "orders";
          
 //  2. Run > setup
 //
