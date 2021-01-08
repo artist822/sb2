@@ -1,0 +1,316 @@
+
+
+<style type="text/css">
+    .glyphicon-refresh-animate {
+      -animation: spin .7s infinite linear;
+      -webkit-animation: spin2 .7s infinite linear;
+    }
+
+    @-webkit-keyframes spin2 {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      from {
+        transform: scale(1) rotate(0deg);
+      }
+
+      to {
+        transform: scale(1) rotate(360deg);
+      }
+    }
+  </style>
+
+  <!-- Form CSS -->
+  <style type="text/css">
+    .form-style-6{
+      font: 95% Cairo, sans-serif;
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 16px;
+      border: #cf0628 2px solid;
+      border-radius:10px;
+    }
+    .form-style-6 h1{
+      background: #43D1AF;
+      padding: 20px 0;
+      font-size: 140%;
+      font-weight: 300;
+      text-align: center;
+      color: #fff;
+      margin: -16px -16px 16px -16px;
+      display: none;
+    }
+    .form-style-6 input[type="text"],
+    .form-style-6 input[type="tel"],
+    .form-style-6 input[type="date"],
+    .form-style-6 input[type="datetime"],
+    .form-style-6 input[type="email"],
+    .form-style-6 input[type="number"],
+    .form-style-6 input[type="search"],
+    .form-style-6 input[type="time"],
+    .form-style-6 input[type="url"],
+    .form-style-6 textarea,
+    .form-style-6 select {
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      background: #fff;
+      margin-bottom: 4%;
+      border: 1px solid #ccc;
+      padding: 3%;
+      color: #555;
+      font-family:  Cairo, sans-serif; 
+    }
+    .form-style-6 input[type="text"]:focus,
+    .form-style-6 input[type="tel"]:focus,
+    .form-style-6 input[type="date"]:focus,
+    .form-style-6 input[type="datetime"]:focus,
+    .form-style-6 input[type="email"]:focus,
+    .form-style-6 input[type="number"]:focus,
+    .form-style-6 input[type="search"]:focus,
+    .form-style-6 input[type="time"]:focus,
+    .form-style-6 input[type="url"]:focus,
+    .form-style-6 textarea:focus,
+    .form-style-6 select:focus{
+      box-shadow: 0 0 5px #43D1AF;
+      padding: 3%;
+      border: 1px solid #43D1AF;
+    }
+    .form-style-6 input[type="submit"],
+    .form-style-6 input[type="button"]{
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      padding: 3%;
+      background: #43D1AF;
+      border-bottom: 2px solid #30C29E;
+      border-top-style: none;
+      border-right-style: none;
+      border-left-style: none;  
+      color: #fff;
+    }
+    .form-style-6 input[type="submit"]:hover,
+    .form-style-6 input[type="button"]:hover{
+      background: #2EBC99;
+    }
+    form input[type="submit"] {
+      background: orangered;
+      color: #fff;
+      text-align: center;
+      border: 0px;
+      padding: 10px 15px;
+      margin: 15px auto;
+      border-radius: 3px;
+    }
+    form button {
+      display: inline-block;
+      padding: 17px 100px;
+      background: #ED018A;
+      color: #fff;
+      border: 0px;
+      border-radius: 3px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 23;
+    }
+    .js_errorMessage {
+      display: none;
+    }
+  </style>
+
+                                                <style type="text/css">
+                                                    < !-- .form-style-6 {
+                                                        font: 95% Cairo, sans-serif;
+                                                        max-width: 400px;
+                                                        margin: 10px auto;
+                                                        padding: 16px;
+                                                        background: #39004c;
+                                                    }
+
+                                                    .form-style-6 h1 {
+                                                        background: #43D1AF;
+                                                        padding: 20px 0;
+                                                        font-size: 140%;
+                                                        font-weight: 300;
+                                                        text-align: center;
+                                                        color: #fff;
+                                                        margin: -16px -16px 16px -16px;
+                                                        display: none;
+                                                    }
+
+                                                    .form-style-6 input[type="text"],
+                                                    .form-style-6 input[type="tel"],
+                                                    .form-style-6 input[type="date"],
+                                                    .form-style-6 input[type="datetime"],
+                                                    .form-style-6 input[type="email"],
+                                                    .form-style-6 input[type="number"],
+                                                    .form-style-6 input[type="search"],
+                                                    .form-style-6 input[type="time"],
+                                                    .form-style-6 input[type="url"],
+                                                    .form-style-6 textarea,
+                                                    .form-style-6 select {
+                                                        -webkit-transition: all 0.30s ease-in-out;
+                                                        -moz-transition: all 0.30s ease-in-out;
+                                                        -ms-transition: all 0.30s ease-in-out;
+                                                        -o-transition: all 0.30s ease-in-out;
+                                                        outline: none;
+                                                        box-sizing: border-box;
+                                                        -webkit-box-sizing: border-box;
+                                                        -moz-box-sizing: border-box;
+                                                        width: 100%;
+                                                        background: #fff;
+                                                        margin-bottom: 4%;
+                                                        border: 1px solid #ccc;
+                                                        padding: 3%;
+                                                        color: #555;
+                                                        font-family: Cairo, sans-serif;
+                                                    }
+
+                                                    .form-style-6 input[type="text"]:focus,
+                                                    .form-style-6 input[type="tel"]:focus,
+                                                    .form-style-6 input[type="date"]:focus,
+                                                    .form-style-6 input[type="datetime"]:focus,
+                                                    .form-style-6 input[type="email"]:focus,
+                                                    .form-style-6 input[type="number"]:focus,
+                                                    .form-style-6 input[type="search"]:focus,
+                                                    .form-style-6 input[type="time"]:focus,
+                                                    .form-style-6 input[type="url"]:focus,
+                                                    .form-style-6 textarea:focus,
+                                                    .form-style-6 select:focus {
+                                                        box-shadow: 0 0 5px #43D1AF;
+                                                        padding: 3%;
+                                                        border: 1px solid #43D1AF;
+                                                    }
+
+                                                    .form-style-6 input[type="submit"],
+                                                    .form-style-6 input[type="button"] {
+                                                        box-sizing: border-box;
+                                                        -webkit-box-sizing: border-box;
+                                                        -moz-box-sizing: border-box;
+                                                        width: 100%;
+                                                        padding: 3%;
+                                                        background: #43D1AF;
+                                                        border-bottom: 2px solid #30C29E;
+                                                        border-top-style: none;
+                                                        border-right-style: none;
+                                                        border-left-style: none;
+                                                        color: #fff;
+                                                    }
+
+                                                    .form-style-6 input[type="submit"]:hover,
+                                                    .form-style-6 input[type="button"]:hover {
+                                                        background: #2EBC99;
+                                                    }
+
+                                                    form input[type="submit"] {
+                                                        background: orangered;
+                                                        color: #fff;
+                                                        text-align: center;
+                                                        border: 0px;
+                                                        padding: 10px 15px;
+                                                        margin: 15px auto;
+                                                        border-radius: 3px;
+                                                    }
+
+                                                    form button {
+                                                        display: inline-block;
+                                                        padding: 17px 100px;
+                                                        background: #f9a717;
+                                                        color: #fff;
+                                                        border: 0px;
+                                                        border-radius: 3px;
+                                                        font-family: 'Cairo', sans-serif;
+                                                        font-size: 23;
+                                                    }
+
+                                                    .js_errorMessage {
+                                                        display: none;
+                                                    }
+
+                                                    -->
+                                                </style>
+
+
+                                                <!-- Contact Form - sent to a Google Sheet -->
+
+                                                <div id="myDIV">
+                                                    <div id="content">
+
+                                                    </div>
+                                                </div>
+
+                                                <script>
+                                                    function myFunction() {
+                                                        var elmnt = document.getElementById("content");
+                                                        elmnt.scrollIntoView();
+                                                    }
+                                                </script>
+                                                <form class="form-style-6" id='foo'>
+                                                    <h1 id="order">أدخل معلوماتك واطلب الآن</h1>
+                                                    <p>
+
+
+
+
+
+
+
+
+
+
+                                                        <label></label>
+                                                        <input dir="rtl" id='name' name='name' type='text' placeholder="الاســــم" required="required">
+
+                                                        <label></label>
+                                                        <input dir="rtl" id='tele' name='tele' type='tel' placeholder="رقــم الــهاتــف" required="required">
+
+                                                        <label></label>
+                                                        <input dir="rtl" id='adress' name='adress' type='text' placeholder="العــنــوان" required="required">
+
+
+                                                        <label></label>
+                                                        <input dir="rtl" id='city' name='city' type='text' placeholder="المــديـنـة" required="required">
+
+                                                        <label></label>
+                                                        <input id='product' name='product' type='hidden' placeholder="product" required="required" value="Alforssan V2">
+
+                                                        <label></label>
+                                                        <input id='quantity' name='quantity' type='hidden' placeholder="quantity" required="required" value="1">
+
+                                                        <label></label>
+                                                        <input id='price' name='price' type='hidden' placeholder="price" required="required" value="260">
+
+
+
+                                                        <div id='success'></div>
+                                                        <center> <button class="order-button  type='submit'>أطلب الآن</button> </center>
+
+       <button class=" order-button js_submit button__text "> أطلب الآن
+ </button>
+    </form>
+
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js "></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='google-sheet.js'></script>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
