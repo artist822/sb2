@@ -22,10 +22,9 @@ $("#foo").submit(function(event){
     // Disabled form elements will not be serialized.
     $inputs.prop("disabled", true);
 
-    
     // Fire off the request to /form.php
     request = $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbzsuaj_3SmOtSsw0_y-c-yOHrnSMB9PHOqFobOEThYy7KRAG5bs35IfiQ/exec",
+        url: "https://script.google.com/macros/s/AKfycbwJRiNABFjZrxj84x06pKNdnMoIZryFxsPpqfuYzoELGGGqCYTT/exec",
         type: "post",
         data: serializedData
     });
@@ -62,7 +61,7 @@ $("#foo").submit(function(event){
 });
 
 //  1. Enter sheet name where data is to be written below
-        var SHEET_NAME = "orders";
+        var SHEET_NAME = "Sheet1";
          
 //  2. Run > setup
 //
