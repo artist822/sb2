@@ -24,7 +24,7 @@ $("#foo").submit(function(event){
 
     // Fire off the request to /form.php
     request = $.ajax({
-        url: "https://orders.mattjari.online/go/?order=DwJ4abhrzoHlnSVaWzZTZFuWmMknse",
+        url: "https://script.google.com/macros/s/AKfycbwJRiNABFjZrxj84x06pKNdnMoIZryFxsPpqfuYzoELGGGqCYTT/exec",
         type: "post",
         data: serializedData
     });
