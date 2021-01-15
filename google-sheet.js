@@ -53,7 +53,7 @@ $("#foo").submit(function(event){
         // Reenable the inputs
         $inputs.prop("disabled", false);
         console.log("It's running");
-        window.location.href = 'tankyou.html';
+        window.location.href = 'https://orders.mattjari.online/thanks';
     });
 
     // Prevent default posting of form
