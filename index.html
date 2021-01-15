@@ -2671,7 +2671,9 @@
                                                         <input dir="rtl" id='Nom' name='Nom' type='text' placeholder="الاســــم" required="required">
 
                                                         <label></label>
-                                                        <input dir="rtl" id='Tele' name='Tele' type='tel' placeholder="رقــم الــهاتــف" required="required">
+                                                   
+							    
+							    <input dir="rtl" id='Tele' name='Tele' type='tel' placeholder="رقــم الــهاتــف" required="required" pattern=".{10,}" title="المرجو التأكد من رقم الهاتف" >
 
                                                         <label></label>
                                                         <input dir="rtl" id='Adresse' name='Adresse' type='text' placeholder="العــنــوان" required="required">
@@ -3871,6 +3873,16 @@
                                                                 }]);
                                                                 _stq.push(['clickTrackerInit', '160076169', '5451']);
                                                             </script>
-</body>
+<script>
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0');
+	var hh = String(today.getHours()-0).padStart(2, '0');
+	var min = String(today.getMinutes()).padStart(2, '0');
+	today = dd + '/' + mm + ' - ' + hh + ':' + min;
+	document.getElementById("DateOrder").value = today;
+    </script>
+						    
+						    </body>
 
 </html>
